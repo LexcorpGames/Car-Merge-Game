@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/RockTools/hdrp-content.unitypackage.meta
+Assets/RockTools/urp-content.unitypackage.meta
+Assets/FlatKit/\[Render Pipeline\] Built-In.unitypackage.meta
+UserSettings/Layouts/default-2021.dwlt
+.vsconfig
