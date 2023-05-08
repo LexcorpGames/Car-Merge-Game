@@ -10,10 +10,11 @@ public class LoopingWorld : MonoBehaviour
     [Header("Setup")]
     [SerializeField] private int _bufferSize = 4;
     [SerializeField] private float _tileSize = 500f;
-    [SerializeField] private float _scrollSpeedInMph = 45f;
+
+    private float _scrollSpeedInMph = 45f;
 
     [Header("Options")]
-    [SerializeField] private bool _useRandomTiles;
+    //[SerializeField] private bool _useRandomTiles;
 
     private List<GameObject> _availableTiles;
     private List<GameObject> _activeBuffer;
