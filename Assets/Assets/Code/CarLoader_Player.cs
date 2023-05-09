@@ -19,6 +19,12 @@ public class CarLoader_Player : MonoBehaviour
     private CarDesciption _loadedCar;
     private CarDesciption _editorLoadedCar;
 
+    public CarDesciption LoadedCar
+    {
+        get => _loadedCar;
+        set => _loadedCar = value;
+    }
+
     private void Awake()
     {
         if(_editorLoadedCar != null)
@@ -45,9 +51,9 @@ public class CarLoader_Player : MonoBehaviour
     public void LoadCar(int carLevel)
     {
         //Remove prev car
-        if (_loadedCar != null)
+        if (LoadedCar != null)
         {
-            var childGO = _loadedCar.transform;
+            var childGO = LoadedCar.transform;
             childGO.parent = _poolNode;
         }
 
@@ -60,7 +66,7 @@ public class CarLoader_Player : MonoBehaviour
                 desc.IsMiniature = false;
 
                 carGO.SetParent(_carPosition);
-                _loadedCar = desc;
+                LoadedCar = desc;
 
                 OnNewCarLoaded();
                 break;

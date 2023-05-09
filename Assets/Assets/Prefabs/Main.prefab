@@ -156,7 +156,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5967b4c328a72e4788d34f79938aa5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentMoney: 0
   _miniatureBoard: {fileID: 0}
+  _gameProgression: {fileID: 5602374491711469559}
+  _numberAnimator: {fileID: 0}
+  _costText: {fileID: 0}
+  _startMoney: 0
+  _gainInterval: 0.33
+  _incomePerMile:
+  - 0
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  - 32
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+  - 2048
+  - 4096
+  _incomeMultiplier:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  _costPerBuy:
+  - 0
+  - 100
+  - 200
+  - 400
+  - 800
+  - 1600
+  - 3200
+  - 6400
+  - 12800
+  - 25600
+  - 51200
+  - 102400
+  - 204800
+  - 409600
+  - 819200
+  - 1638400
+  _rewardPerCheckpoint:
+  - Distance: 0.1
+    Reward: 500
+    Claimed: 0
 --- !u!1 &8981079521195661011
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,9 +260,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3c9ff9b63b44a469e23210aac4ba22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Current_MPH: 45
+  Current_MPH: 0
+  Current_Distance: 0
   _loopingWorld: {fileID: 5868142593414774544}
+  _miniatureBoard: {fileID: 0}
   _carLoaderPlayer: {fileID: 4520772748159103749}
+  _textMesh: {fileID: 0}
+  _manageFOV: 1
+  _boostCamFOV: {x: 60, y: 80}
+  _boostTransition: 1
+  _startSpeed:
+  - 0
+  - 45
+  - 55
+  - 75
+  - 90
+  - 120
+  - 140
+  - 150
+  - 180
+  - 200
+  - 220
+  - 240
+  - 260
+  - 300
 --- !u!114 &4520772748159103749
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,6 +24,10 @@ public class MiniatureBoard : MonoBehaviour
     private Transform _poolNode;
     private CarDesciption _draggedCar;
 
+    [HideInInspector] public int CurrentCarLevel;
+
+    public CarDesciption DraggedCar { get => _draggedCar; set => _draggedCar = value; }
+
     private void Awake()
     {
         GameObject newNode = new GameObject("MiniaturePool");
@@ -117,10 +121,11 @@ public class MiniatureBoard : MonoBehaviour
                             }
                         }
                     }
-                    else if(Physics.Raycast(ray, out hitInfo, 10f, _boardLayer))
+                    else if(Physics.Raycast(ray, out hitInfo, 10f, _boardLayer) && (CurrentCarLevel != _draggedCar.Level))
                     {
                         _draggedCar.PoolBack();
                         _carLoader_Player.LoadCar(_draggedCar.Level);
+                        CurrentCarLevel = _draggedCar.Level;
                     }
 
                     _draggedCar.transform.localPosition = Vector3.zero;
