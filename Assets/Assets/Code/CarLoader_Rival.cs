@@ -10,11 +10,19 @@ public class CarLoader_Rival : MonoBehaviour
 {
     [Header("RIVALS")]
     [SerializeField] private Transform _carPosition;
+    [SerializeField] private Transform _positionStart;
+    [SerializeField] private Transform _positionEnd;
+    [Range(0f, 1f)]
+    [SerializeField] private float _overtakeProgress;
     [SerializeField] private List<CarDesciption> _carPrefabs;
 
     private Transform _poolNode;
-    private CarDesciption _loadedCar;
+    [Header("Debug")]
+    [SerializeField] private CarDesciption _loadedCar;
     private CarDesciption _editorLoadedCar;
+
+    public float OvertakeProgress { get => _overtakeProgress; set => _overtakeProgress = value; }
+    public CarDesciption LoadedCar { get => _loadedCar; set => _loadedCar = value; }
 
     private void Awake()
     {
@@ -31,10 +39,17 @@ public class CarLoader_Rival : MonoBehaviour
             newCarGO.name = prefab.name;
             newCarGO.transform.localPosition = Vector3.zero;
             newCarGO.transform.localEulerAngles = Vector3.zero;
+            CarDesciption desc = newCarGO.GetComponent<CarDesciption>();
+            desc.SetPoolParent(_poolNode);
         }
     }
 
-    public void LoadCar(int carLevel)
+    private void Update()
+    {
+        UpdateCarPos();
+    }
+
+    public CarDesciption LoadCar(int level)
     {
         //Remove prev car
         if (_loadedCar != null)
@@ -47,14 +62,31 @@ public class CarLoader_Rival : MonoBehaviour
         {
             var carGO = _poolNode.GetChild(i);
             CarDesciption desc = carGO.GetComponent<CarDesciption>();
-            if(desc.Level == carLevel)
+            if(desc.Level == level)
             {
                 desc.IsMiniature = false;
 
                 carGO.SetParent(_carPosition);
                 _loadedCar = desc;
-                break;
+                return _loadedCar;
             }
+        }
+
+        return null;
+    }
+
+    public void UpdateRivalPosition(float progress)
+    {
+        if (_loadedCar == null) return;
+
+        _overtakeProgress = progress;
+    }
+
+    public void UpdateCarPos()
+    {
+        if(_loadedCar != null)
+        {
+            _loadedCar.transform.position = Vector3.Lerp(_positionStart.position, _positionEnd.position, _overtakeProgress);
         }
     }
 }
@@ -77,6 +109,7 @@ public class CarLoader_Rival_Editor : Editor
 
         if (myTarget == null) return;
 
+        myTarget.UpdateCarPos();
         GUILayout.Space(20f);
     }
 }
