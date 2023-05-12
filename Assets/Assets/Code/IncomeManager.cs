@@ -8,9 +8,8 @@ public class IncomeManager : MonoBehaviour
     [System.Serializable]
     private class DistReward
     {
-        public float Distance;
+        public float TimeDelay;
         public float Reward;
-        public bool Claimed;
     }
 
     [SerializeField] private float _currentMoney;
@@ -30,11 +29,12 @@ public class IncomeManager : MonoBehaviour
     [SerializeField] private float[] _costPerBuy;
 
     [Header("Checkpoints")]
-    [SerializeField] private DistReward[] _rewardPerCheckpoint;
+    [SerializeField] private DistReward _rewardPerCheckpoint;
 
     private float _updateIntervalLeft;
     private int _multiplierIndex;
     private int _costButtonIndex;
+    private float _currentCheckPointTime;
 
     public void TryBuy()
     {
@@ -55,6 +55,7 @@ public class IncomeManager : MonoBehaviour
 
     public void Update()
     {
+        //CASH TICK
         if(_updateIntervalLeft >= 0)
         {
             _updateIntervalLeft -= Time.deltaTime;
@@ -68,13 +69,16 @@ public class IncomeManager : MonoBehaviour
             }
         }
 
-        foreach(var checkpoint in _rewardPerCheckpoint)
+        //CHECKPOINT TICK
+        if(_gameProgression.Current_MPH > 10f)
         {
-            if(_gameProgression.Current_Distance > checkpoint.Distance && !checkpoint.Claimed)
+            _currentCheckPointTime += Time.deltaTime;
+
+            if(_currentCheckPointTime >= _rewardPerCheckpoint.TimeDelay)
             {
-                checkpoint.Claimed = true;
-                _currentMoney += checkpoint.Reward;
-                Debug.Log("REWARD: +" + checkpoint.Reward + " Cash!");
+                _currentCheckPointTime = 0f;
+
+                CheckpointReached();
             }
         }
     }
@@ -86,5 +90,10 @@ public class IncomeManager : MonoBehaviour
         _currentMoney += _gameProgression.Current_MPH * (_incomePerMile[carLevel] / 60f) * _incomeMultiplier[_multiplierIndex];
 
         _numberAnimator.SetTargetValue(_currentMoney);
+    }
+
+    private void CheckpointReached()
+    {
+        Debug.Log("REWARD: +" + _rewardPerCheckpoint.Reward + " Cash!");
     }
 }

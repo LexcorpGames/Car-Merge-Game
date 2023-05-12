@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150680902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 250.1}
+  m_LocalPosition: {x: 0, y: 0, z: 188.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,18 +137,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e23eaaaca612a4a88d780d7194007d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _leaderBoardRow:
+  - NameField: {fileID: 0}
+    RankField: {fileID: 0}
+    Overlay: {fileID: 0}
+  - NameField: {fileID: 0}
+    RankField: {fileID: 0}
+    Overlay: {fileID: 0}
+  - NameField: {fileID: 0}
+    RankField: {fileID: 0}
+    Overlay: {fileID: 0}
+  - NameField: {fileID: 0}
+    RankField: {fileID: 0}
+    Overlay: {fileID: 0}
   _boardMemebers:
   - Name: Jessy
     CarPrefab: {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
-    OvertakeTime: 45
+    OvertakeTime: 30
     IsBehind: 0
   - Name: Mark
     CarPrefab: {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
-    OvertakeTime: 45
+    OvertakeTime: 30
     IsBehind: 0
   - Name: Kenny
     CarPrefab: {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
-    OvertakeTime: 45
+    OvertakeTime: 30
     IsBehind: 0
 --- !u!1 &2086442773
 GameObject:
@@ -340,9 +353,8 @@ MonoBehaviour:
   - 819200
   - 1638400
   _rewardPerCheckpoint:
-  - Distance: 0.1
-    Reward: 500
-    Claimed: 0
+    TimeDelay: 30
+    Reward: 250
 --- !u!1 &8981079521195661011
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +413,8 @@ MonoBehaviour:
   _miniatureBoard: {fileID: 0}
   _carLoaderPlayer: {fileID: 4520772748159103749}
   _carLoaderRival: {fileID: 8477132976842983597}
-  _textMesh: {fileID: 0}
+  _mphTMP: {fileID: 0}
+  _distanceTMP: {fileID: 0}
   _manageFOV: 1
   _boostCamFOV: {x: 58, y: 72}
   _boostTransition: 1

@@ -17,7 +17,8 @@ public class GameProgression : MonoBehaviour
     [SerializeField] private MiniatureBoard _miniatureBoard;
     [SerializeField] private CarLoader_Player _carLoaderPlayer;
     [SerializeField] private CarLoader_Rival _carLoaderRival;
-    [SerializeField] private TextMeshProUGUI _textMesh;
+    [SerializeField] private TextMeshProUGUI _mphTMP;
+    [SerializeField] private TextMeshProUGUI _distanceTMP;
 
     [Header("Boost")]
     [SerializeField] private bool _manageFOV;
@@ -36,7 +37,8 @@ public class GameProgression : MonoBehaviour
     private bool _rivalActive;
     private float _rivalOvertakeTime_Current;
     private float _rivalOvertakeTime_Total;
-    private int _rivalIndex;
+    private int _nextRivalIndex;
+    private int _currentRivalIndex;
 
     private void Start()
     {
@@ -63,25 +65,25 @@ public class GameProgression : MonoBehaviour
             float boostMod = 1f;
             if (_boostActive) boostMod = 1.5f;
             _rivalOvertakeTime_Current += Time.deltaTime * boostMod;
-            float rivalProgress = _rivalOvertakeTime_Current / _leaderBoard.BoardMemebers[_rivalIndex].OvertakeTime;
+            float rivalProgress = _rivalOvertakeTime_Current / _leaderBoard.BoardMemebers[_currentRivalIndex].OvertakeTime;
             _carLoaderRival.UpdateRivalPosition(rivalProgress);
 
             if (rivalProgress >= 0.125f)
             {
-                _leaderBoard.BoardMemebers[_rivalIndex].IsBehind = true;
+                _leaderBoard.BoardMemebers[_currentRivalIndex].IsBehind = true;
             }
 
             if (rivalProgress >= 1f)
             {
                 _rivalActive = false;
                 _carLoaderRival.LoadedCar.PoolBack();
-                _rivalIndex++;
             }
         }
 
         _loopingWorld.UpdateSpeed(Current_MPH);
 
-        _textMesh.text = Current_MPH.ToString("F0");
+        _mphTMP.text = Current_MPH.ToString("F0");
+        _distanceTMP.text = Current_Distance.ToString("F1");
 
         //BOOST
         if (_carLoaderPlayer.LoadedCar != null)
@@ -134,12 +136,14 @@ public class GameProgression : MonoBehaviour
     private void InitiateNextRival()
     {
         int carLevel = _carLoaderPlayer.LoadedCar.Level;
-        var rivalDesc = _carLoaderRival.LoadCar(_leaderBoard.BoardMemebers[_rivalIndex].CarPrefab.Level);
+        var rivalDesc = _carLoaderRival.LoadCar(_leaderBoard.BoardMemebers[_nextRivalIndex].CarPrefab.Level);
         if(rivalDesc != null)
         {
             _rivalActive = true;
             _rivalOvertakeTime_Current = 0f;
-            //_rivalOvertakeTime_Total = 
+
+            _currentRivalIndex = _nextRivalIndex;
+            _nextRivalIndex++;
         }
     }
 }
