@@ -45,6 +45,8 @@ public class GameProgression : MonoBehaviour
         _carLoaderPlayer.OnNewCarLoaded += OnStartDrivingEvent;
 
         _desiredFOV = _boostCamFOV.x;
+
+        LoadSavedData();
     }
     
     private void LateUpdate()
@@ -68,7 +70,7 @@ public class GameProgression : MonoBehaviour
             float rivalProgress = _rivalOvertakeTime_Current / _leaderBoard.BoardMemebers[_currentRivalIndex].OvertakeTime;
             _carLoaderRival.UpdateRivalPosition(rivalProgress);
 
-            if (rivalProgress >= 0.125f)
+            if (rivalProgress >= 0.4f)
             {
                 _leaderBoard.BoardMemebers[_currentRivalIndex].IsBehind = true;
             }
@@ -136,15 +138,29 @@ public class GameProgression : MonoBehaviour
     private void InitiateNextRival()
     {
         int carLevel = _carLoaderPlayer.LoadedCar.Level;
-        var rivalDesc = _carLoaderRival.LoadCar(_leaderBoard.BoardMemebers[_nextRivalIndex].CarPrefab.Level);
-        if(rivalDesc != null)
+        var nextRival = _leaderBoard.GetNextRivalInFront();
+        if (nextRival != null)
         {
-            _rivalActive = true;
-            _rivalOvertakeTime_Current = 0f;
+            var rivalDesc = _carLoaderRival.LoadCar(nextRival.Level);
+            if (rivalDesc != null)
+            {
+                _rivalActive = true;
+                _rivalOvertakeTime_Current = 0f;
 
-            _currentRivalIndex = _nextRivalIndex;
-            _nextRivalIndex++;
+                _currentRivalIndex = _nextRivalIndex;
+                _nextRivalIndex++;
+            }
         }
+    }
+
+    private void LoadSavedData()
+    {
+        Current_Distance = PlayerPrefs.GetFloat("Current_Distance", 0f);
+    }
+
+    public void SaveData()
+    {
+        PlayerPrefs.SetFloat("Current_Distance", Current_Distance);
     }
 }
 

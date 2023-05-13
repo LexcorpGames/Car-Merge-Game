@@ -11,6 +11,10 @@ public class LoopingWorld : MonoBehaviour
     [SerializeField] private int _bufferSize = 4;
     [SerializeField] private float _tileSize = 500f;
 
+    [Header("Checkpoint")]
+    [SerializeField] private GameObject _checkPoint;
+    [SerializeField] private Transform _checkPointStartPos;
+
     private float _scrollSpeedInMph = 45f;
 
     [Header("Options")]
@@ -80,6 +84,16 @@ public class LoopingWorld : MonoBehaviour
             }
         }
 
+        if (_checkPoint != null && _checkPoint.activeInHierarchy)
+        {
+            _checkPoint.transform.Translate(Vector3.forward * scrollSpeedInUnityUnitsPerSecond * Time.deltaTime);
+
+            if (_checkPoint.transform.position.z > _tileSize)
+            {
+                _checkPoint.SetActive(false);
+            }
+        }
+
         if (tileNeedsRemoving != null)
         {
             _activeBuffer.Remove(tileNeedsRemoving);
@@ -117,5 +131,11 @@ public class LoopingWorld : MonoBehaviour
     public void UpdateSpeed(float mph)
     {
         _scrollSpeedInMph = mph;
+    }
+
+    public void ActivateCheckpoint()
+    {
+        _checkPoint.SetActive(true);
+        _checkPoint.transform.position = _checkPointStartPos.position;
     }
 }

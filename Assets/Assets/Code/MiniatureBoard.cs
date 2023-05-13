@@ -50,6 +50,8 @@ public class MiniatureBoard : MonoBehaviour
                 carDesc.SetPoolParent(_poolNode);
             }
         }
+
+        LoadSavedData();
     }
 
     public void Update()
@@ -181,5 +183,38 @@ public class MiniatureBoard : MonoBehaviour
         }
 
         return result;
+    }
+
+    private void LoadSavedData()
+    {
+        for (int i = 0; i < _slots.Length; i++)
+        {
+            int slotLvl = PlayerPrefs.GetInt("Slot" + i, 0);
+            if(slotLvl > 0)
+            {
+                LoadMiniature(slotLvl, _slots[i].PositionPoint);
+            }
+        }
+    }
+
+    public void SaveData()
+    {
+        int slotIndex = 0;
+        foreach (var slot in _slots)
+        {
+            int lvl = 0;
+            if (slot.PositionPoint.childCount > 0)
+            {
+                var child = slot.PositionPoint.GetChild(0);
+                if (child != null)
+                {
+                    var carDesc = child.GetComponent<CarDesciption>();
+                    lvl = carDesc.Level;
+                }
+            }
+            PlayerPrefs.SetInt("Slot" + slotIndex, lvl);
+
+            slotIndex++;
+        }
     }
 }

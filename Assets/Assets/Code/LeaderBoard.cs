@@ -30,6 +30,8 @@ public class LeaderBoard : MonoBehaviour
 
     private void Awake()
     {
+        LoadSavedData();
+
         _rankList = new int[_leaderBoardRow.Length];
     }
 
@@ -117,6 +119,36 @@ public class LeaderBoard : MonoBehaviour
                 _leaderBoardRow[i].RankField.text = "#" + (_leaderBoardRow.Length - (rivalIndex + rankNumber)).ToString();
                 _leaderBoardRow[i].Overlay.gameObject.SetActive(false);
             }
+        }
+    }
+
+    public CarDesciption GetNextRivalInFront()
+    {
+        CarDesciption carDesciption = null;
+        for (int i = 0; i < _boardMemebers.Count; i++)
+        {
+            if (!_boardMemebers[i].IsBehind)
+            {
+                return _boardMemebers[i].CarPrefab;
+            }
+        }
+
+        return carDesciption;
+    }
+
+    private void LoadSavedData()
+    {
+        foreach (var member in _boardMemebers)
+        {
+            member.IsBehind = PlayerPrefs.GetInt(member.Name) == 1;
+        }
+    }
+
+    public void SaveData()
+    {
+        foreach(var member in _boardMemebers)
+        {
+            PlayerPrefs.SetInt(member.Name, member.IsBehind? 1 : 0);
         }
     }
 }

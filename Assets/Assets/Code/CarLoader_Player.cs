@@ -46,6 +46,8 @@ public class CarLoader_Player : MonoBehaviour
             newCarGO.transform.localPosition = Vector3.zero;
             newCarGO.transform.localEulerAngles = Vector3.zero;
         }
+
+        LoadSavedData();
     }
 
     public void LoadCar(int carLevel)
@@ -68,7 +70,10 @@ public class CarLoader_Player : MonoBehaviour
                 carGO.SetParent(_carPosition);
                 LoadedCar = desc;
 
-                OnNewCarLoaded();
+                if (OnNewCarLoaded != null)
+                {
+                    OnNewCarLoaded();
+                }
                 break;
             }
         }
@@ -86,6 +91,21 @@ public class CarLoader_Player : MonoBehaviour
         newCarGO.transform.localPosition = Vector3.zero;
         newCarGO.transform.localEulerAngles = Vector3.zero;
         _editorLoadedCar = newCarGO.GetComponent<CarDesciption>();
+    }
+
+    private void LoadSavedData()
+    {
+        var carLvl = PlayerPrefs.GetInt("LoadedCar.Level", 0);
+
+        if(carLvl != 0)
+        {
+            LoadCar(carLvl);
+        }
+    }
+
+    public void SaveData()
+    {
+        PlayerPrefs.SetInt("LoadedCar.Level", LoadedCar.Level);
     }
 }
 
