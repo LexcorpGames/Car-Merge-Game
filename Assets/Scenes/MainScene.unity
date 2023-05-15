@@ -2322,6 +2322,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -158}
   m_SizeDelta: {x: 180.3645, y: 220.338}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1001 &601037620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1437013786291208867, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_Name
+      value: Vehicle_2035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024700565432727383, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
 --- !u!1 &614284779
 GameObject:
   m_ObjectHideFlags: 0
@@ -7324,6 +7381,146 @@ PrefabInstance:
       propertyPath: _numberAnimator
       value: 
       objectReference: {fileID: 510063164}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.size
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[23]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[24]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[25]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[26]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[27]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[28]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[29]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[30]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[31]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[32]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[33]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerBuy.Array.data[34]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[3]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[5]
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[6]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[7]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[8]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[9]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[2]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[3]
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[4]
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[5]
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[6]
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[7]
+      value: 2500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[8]
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _costPerUpgrade.Array.data[9]
+      value: 3500
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[10]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[11]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[12]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[13]
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _incomePerMile.Array.data[14]
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _mphTMP
       value: 

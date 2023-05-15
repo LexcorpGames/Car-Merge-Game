@@ -357,15 +357,16 @@ MonoBehaviour:
   - 2
   - 4
   - 8
-  - 16
-  - 32
-  - 64
-  - 128
-  - 256
-  - 512
-  - 1024
-  - 2048
-  - 4096
+  - 10
+  - 15
+  - 20
+  - 25
+  - 30
+  - 35
+  - 40
+  - 60
+  - 80
+  - 100
   _incomeMultiplier:
   - 1
   - 2
@@ -379,21 +380,28 @@ MonoBehaviour:
   - 10
   _costPerBuy:
   - 0
+  - 15
+  - 25
+  - 50
+  - 75
   - 100
+  - 150
   - 200
+  - 250
+  - 300
+  - 350
   - 400
+  - 450
+  - 500
+  - 600
+  - 700
   - 800
-  - 1600
-  - 3200
-  - 6400
-  - 12800
-  - 25600
-  - 51200
-  - 102400
-  - 204800
-  - 409600
-  - 819200
-  - 1638400
+  - 900
+  - 1000
+  - 1200
+  - 1300
+  - 1400
+  - 1500
   _costPerUpgrade:
   - 200
   - 300
@@ -473,19 +481,19 @@ MonoBehaviour:
   _boostTransition: 1
   _startSpeed:
   - 0
-  - 45
-  - 55
-  - 75
-  - 90
+  - 25
+  - 30
+  - 35
+  - 40
+  - 50
+  - 60
+  - 80
+  - 100
   - 120
   - 140
-  - 150
-  - 180
+  - 160
   - 200
-  - 220
-  - 240
-  - 260
-  - 300
+  - 250
 --- !u!114 &4520772748159103749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,9 +508,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _carPosition: {fileID: 409822766}
   _carPrefabs:
+  - {fileID: -4300201797180208337, guid: 29118a9e039a9064eaf9d1c8ecf999e1, type: 3}
+  - {fileID: -4300201797180208337, guid: e90423c81f9fade48893b892b4c1a2d4, type: 3}
+  - {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
+  - {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
+  - {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
   - {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
-  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
+  - {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
+  - {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
   - {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
+  - {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
+  - {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
+  - {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
+  - {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
+  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
+  - {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
+  - {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
 --- !u!114 &8477132976842983597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,9 +541,22 @@ MonoBehaviour:
   _positionEnd: {fileID: 150680903}
   _overtakeProgress: 0
   _carPrefabs:
+  - {fileID: -4300201797180208337, guid: 29118a9e039a9064eaf9d1c8ecf999e1, type: 3}
+  - {fileID: -4300201797180208337, guid: e90423c81f9fade48893b892b4c1a2d4, type: 3}
+  - {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
+  - {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
+  - {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
   - {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
-  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
+  - {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
+  - {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
   - {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
+  - {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
+  - {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
+  - {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
+  - {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
+  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
+  - {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
+  - {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
   _loadedCar: {fileID: 0}
 --- !u!1001 &7775150707401884943
 PrefabInstance:
