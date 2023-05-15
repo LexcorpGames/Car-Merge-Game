@@ -152,15 +152,51 @@ MonoBehaviour:
     Overlay: {fileID: 0}
   _boardMemebers:
   - Name: Jessy
-    CarPrefab: {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
+    CarPrefab: {fileID: -4300201797180208337, guid: e90423c81f9fade48893b892b4c1a2d4, type: 3}
     OvertakeTime: 60
     IsBehind: 0
   - Name: Mark
-    CarPrefab: {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
+    CarPrefab: {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
     OvertakeTime: 60
     IsBehind: 0
   - Name: Kenny
-    CarPrefab: {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
+    CarPrefab: {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Kevin
+    CarPrefab: {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Jesus
+    CarPrefab: {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Stella
+    CarPrefab: {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Ruby
+    CarPrefab: {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Otis
+    CarPrefab: {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Bella
+    CarPrefab: {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Zeus
+    CarPrefab: {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Mike
+    CarPrefab: {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
+    OvertakeTime: 60
+    IsBehind: 0
+  - Name: Ben
+    CarPrefab: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
     OvertakeTime: 60
     IsBehind: 0
 --- !u!1 &2086442773
@@ -353,17 +389,17 @@ MonoBehaviour:
   _gainInterval: 0.33
   _incomePerMile:
   - 0
-  - 1
   - 2
   - 4
+  - 6
   - 8
-  - 10
   - 15
   - 20
   - 25
   - 30
   - 35
   - 40
+  - 50
   - 60
   - 80
   - 100
@@ -402,17 +438,94 @@ MonoBehaviour:
   - 1300
   - 1400
   - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
+  - 1500
   _costPerUpgrade:
   - 200
   - 300
-  - 400
   - 500
-  - 600
   - 700
-  - 800
-  - 900
   - 1000
-  - 1100
+  - 1500
+  - 2000
+  - 2500
+  - 3000
+  - 3500
   _rewardPerCheckpoint:
     TimeDelay: 30
     Reward: 250
@@ -513,15 +626,12 @@ MonoBehaviour:
   - {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
   - {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
   - {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
-  - {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
   - {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
   - {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
-  - {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
   - {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
   - {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
   - {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
   - {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
-  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
   - {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
   - {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
 --- !u!114 &8477132976842983597
@@ -546,15 +656,12 @@ MonoBehaviour:
   - {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
   - {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
   - {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
-  - {fileID: 3915747835175644044, guid: ba6d2538ae77e8e479ec3bf17186303b, type: 3}
   - {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
   - {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
-  - {fileID: -4300201797180208337, guid: a68e2638a97692b49a399d9d5351c0f3, type: 3}
   - {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
   - {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
   - {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
   - {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
-  - {fileID: -8468946785226645464, guid: d134440c17a907b48a01db590196b1a1, type: 3}
   - {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
   - {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
   _loadedCar: {fileID: 0}
