@@ -107,7 +107,7 @@ public class LeaderBoard : MonoBehaviour
             if (playerPosOnBoard == i)
             {
                 _leaderBoardRow[i].NameField.text = "You";
-                _leaderBoardRow[i].RankField.text = "#" + (_leaderBoardRow.Length - (rivalIndex)).ToString();
+                _leaderBoardRow[i].RankField.text = "#" + (_boardMemebers.Count - (rivalIndex)).ToString();
                 _leaderBoardRow[i].Overlay.gameObject.SetActive(true);
                 playerSet = true;
             }
@@ -116,7 +116,7 @@ public class LeaderBoard : MonoBehaviour
                 int rankNumber = 0;
                 if (playerSet) rankNumber = 1;
                 _leaderBoardRow[i].NameField.text = _boardMemebers[rivalIndex].Name;
-                _leaderBoardRow[i].RankField.text = "#" + (_leaderBoardRow.Length - (rivalIndex + rankNumber)).ToString();
+                _leaderBoardRow[i].RankField.text = "#" + (_boardMemebers.Count - (rivalIndex + rankNumber)).ToString();
                 _leaderBoardRow[i].Overlay.gameObject.SetActive(false);
             }
         }
