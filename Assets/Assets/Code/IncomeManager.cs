@@ -178,6 +178,13 @@ public class IncomeManager : MonoBehaviour
         {
             _upgradeTMP.text = _costPerUpgrade[_upgradeButtonIndex].ToString();
         }
+
+        if (_costButtonIndex > 0)
+        {
+            _buyButton_Free.SetActive(false);
+            _buyButton.SetActive(true);
+            _upgradeButton.SetActive(true);
+        }
     }
 
     private void LoadSavedData()
