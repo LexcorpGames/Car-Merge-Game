@@ -483,6 +483,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: untitled (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4424396828587804706, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914173764048766335, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
 --- !u!4 &1204368150716514956 stripped
@@ -490,3 +498,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
   m_PrefabInstance: {fileID: 1674352862886225255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3052000701005344069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
+  m_PrefabInstance: {fileID: 1674352862886225255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6642429067322005505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3052000701005344069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 380, y: 0, z: 0}
+  rotateSpace: 0
+--- !u!1 &4985241498790535192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5914173764048766335, guid: f457cffb2e040b348aa90541fe9d1650, type: 3}
+  m_PrefabInstance: {fileID: 1674352862886225255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7742348855182053810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4985241498790535192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 380, y: 0, z: 0}
+  rotateSpace: 0

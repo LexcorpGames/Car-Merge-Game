@@ -19,7 +19,7 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 300
-  m_LinearFogEnd: 1000
+  m_LinearFogEnd: 550
   m_AmbientSkyColor: {r: 0.50563633, g: 0.5430909, b: 0.618, a: 1}
   m_AmbientEquatorColor: {r: 0.66017646, g: 0.72847056, b: 0.774, a: 1}
   m_AmbientGroundColor: {r: 0.320211, g: 0.34028012, b: 0.42299998, a: 1}
@@ -3507,8 +3507,8 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194230}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3548,7 +3548,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 700
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -3592,14 +3592,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Script: {fileID: 11500000, guid: 301eca71255100647bb9bad1d5641921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: c45166d581944e84c8f9ed23d7e9e941, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
+  shader: {fileID: 4800000, guid: 3d417cf48fde7da46b5a79811115e87f, type: 3}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3609,57 +3605,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d3f749976c088a4a8a73772e8a572bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 963194228}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 1
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+  Blur: 0
+  BlurAmount: 1
+  BlurMask: {fileID: 0}
+  Bloom: 1
+  BloomColor: {r: 1, g: 1, b: 1, a: 1}
+  BloomAmount: 0.32
+  BloomDiffuse: 0.7
+  BloomThreshold: 0.05
+  BloomSoftness: 0
+  LUT: 0
+  LutAmount: 0
+  SourceLut: {fileID: 0}
+  ImageFiltering: 1
+  Color: {r: 1, g: 1, b: 1, a: 1}
+  Contrast: 0.01
+  Brightness: 0.04
+  Saturation: 0.03
+  Exposure: 0.02
+  Gamma: 0.005
+  Sharpness: 0
+  ChromaticAberration: 1
+  Offset: 0.07
+  FishEyeDistortion: 0.06
+  GlitchAmount: 0
+  Distortion: 1
+  LensDistortion: 0.01
+  Vignette: 0
+  VignetteColor: {r: 0, g: 0, b: 0, a: 1}
+  VignetteAmount: 0
+  VignetteSoftness: 0.524
+  material: {fileID: 2100000, guid: 3aeedadbfc1ffb644834cb2b7d57aa77, type: 2}
 --- !u!1 &1005932188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,11 +3963,11 @@ RectTransform:
   m_Father: {fileID: 614284783}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -789.9048}
-  m_SizeDelta: {x: 1080, y: 340.1904}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 340.19043}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1077804723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4597,7 +4576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -161}
+  m_AnchoredPosition: {x: -7.3000793, y: -161}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1273207198
@@ -5244,7 +5223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -33.80005}
+  m_AnchoredPosition: {x: -7.3000793, y: -33.80005}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1561654763
@@ -5690,7 +5669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -287.9001}
+  m_AnchoredPosition: {x: -7.3000793, y: -287.9001}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1681531427

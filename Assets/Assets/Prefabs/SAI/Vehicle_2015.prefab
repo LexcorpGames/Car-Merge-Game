@@ -483,8 +483,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 7902910171232814636, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8406449443176571981, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}
+--- !u!1 &458208891541265333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8406449443176571981, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}
+  m_PrefabInstance: {fileID: 8282779102137548792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5226985486306753301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458208891541265333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0
+--- !u!1 &2260403872273578452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7902910171232814636, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}
+  m_PrefabInstance: {fileID: 8282779102137548792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1565614043982420743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2260403872273578452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0
 --- !u!4 &8464778046318221331 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8c0d7ebe4f2078f42b78bf8e295ab554, type: 3}

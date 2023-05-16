@@ -479,9 +479,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8284751932349238456, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
       propertyPath: m_Name
       value: baseasas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458146715234657461, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
@@ -490,3 +498,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
   m_PrefabInstance: {fileID: 280284448667830931}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1073373193449650651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8284751932349238456, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
+  m_PrefabInstance: {fileID: 280284448667830931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3216804704082246304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073373193449650651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 0, y: 0, z: -280}
+  rotateSpace: 0
+--- !u!1 &1720275614820167206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1458146715234657461, guid: 2099d108216d53c49b443fe21ea38ef2, type: 3}
+  m_PrefabInstance: {fileID: 280284448667830931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3118542623590879033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720275614820167206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 0, y: 0, z: -280}
+  rotateSpace: 0

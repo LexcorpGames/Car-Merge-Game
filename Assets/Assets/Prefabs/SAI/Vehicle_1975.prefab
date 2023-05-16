@@ -479,9 +479,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2671264018954102663, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
       propertyPath: m_Name
       value: base (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841293487264208273, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
@@ -490,3 +498,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
   m_PrefabInstance: {fileID: 102893356475975928}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6593357203142004865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2671264018954102663, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
+  m_PrefabInstance: {fileID: 102893356475975928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2801241575408134979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593357203142004865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0
+--- !u!1 &7907285308210158953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7841293487264208273, guid: 1299b64e4d027d54da254f93bcba83dc, type: 3}
+  m_PrefabInstance: {fileID: 102893356475975928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4846171689132951118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7907285308210158953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0

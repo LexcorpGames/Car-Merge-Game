@@ -479,12 +479,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7681050130539836769, guid: dd11786fdbd21214c83f910cca843182, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3894529921859603914, guid: dd11786fdbd21214c83f910cca843182, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dd11786fdbd21214c83f910cca843182, type: 3}
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd11786fdbd21214c83f910cca843182, type: 3}
+--- !u!1 &2001952674594814303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3894529921859603914, guid: dd11786fdbd21214c83f910cca843182, type: 3}
+  m_PrefabInstance: {fileID: 5925475911166085993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7630850866224577122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001952674594814303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0
+--- !u!1 &5142241509332271606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7681050130539836769, guid: dd11786fdbd21214c83f910cca843182, type: 3}
+  m_PrefabInstance: {fileID: 5925475911166085993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6271128309923061148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5142241509332271606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa64a828219b44cb0eb5bfbfa83524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateVector: {x: 280, y: 0, z: 0}
+  rotateSpace: 0
 --- !u!4 &6174784249104510082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd11786fdbd21214c83f910cca843182, type: 3}
