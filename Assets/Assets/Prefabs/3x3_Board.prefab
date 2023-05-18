@@ -89,7 +89,7 @@ MonoBehaviour:
   _carLoader_Player: {fileID: 0}
   _heightOffset: 0
   _transitionSpeed: 10
-  _poolSize: 5
+  _poolSize: 9
   _carLayer:
     serializedVersion: 2
     m_Bits: 1024

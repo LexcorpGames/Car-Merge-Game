@@ -8944,10 +8944,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102131995}
     - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _currentMoney
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 177021174333244006, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _incomeGainUI
       value: 
       objectReference: {fileID: 439312623}
@@ -8967,14 +8963,6 @@ PrefabInstance:
       propertyPath: _numberAnimator
       value: 
       objectReference: {fileID: 510063164}
-    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _carPrefabs.Array.data[13]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
-    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _carPrefabs.Array.data[14]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
     - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _mphTMP
       value: 
@@ -9031,18 +9019,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _overtakeProgress
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _carPrefabs.Array.data[13]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
-    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _carPrefabs.Array.data[14]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
     - target: {fileID: 8981079521195661011, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: m_Name
       value: Main
@@ -9075,14 +9051,6 @@ PrefabInstance:
       propertyPath: _carLoader_Player
       value: 
       objectReference: {fileID: 1476430322}
-    - target: {fileID: 470091344740557606, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
-      propertyPath: _carPrefabs.Array.data[13]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
-    - target: {fileID: 470091344740557606, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
-      propertyPath: _carPrefabs.Array.data[14]
-      value: 
-      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
     - target: {fileID: 470091344740557607, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
       propertyPath: m_RootOrder
       value: 0

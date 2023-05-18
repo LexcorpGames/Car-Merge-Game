@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5967b4c328a72e4788d34f79938aa5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentMoney: 9999
+  _currentMoney: 0
   _miniatureBoard: {fileID: 0}
   _gameProgression: {fileID: 5602374491711469559}
   _numberAnimator: {fileID: 0}
@@ -413,6 +413,13 @@ MonoBehaviour:
   - 7
   - 8
   - 9
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
   - 10
   _costPerBuy:
   - 0
