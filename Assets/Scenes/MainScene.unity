@@ -5697,7 +5697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -161}
+  m_AnchoredPosition: {x: -7.3000793, y: -161}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1273207198
@@ -6559,7 +6559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -33.80005}
+  m_AnchoredPosition: {x: -7.3000793, y: -33.80005}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1561654763
@@ -7005,7 +7005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -7.300049, y: -287.9001}
+  m_AnchoredPosition: {x: -7.3000793, y: -287.90015}
   m_SizeDelta: {x: 369.6873, y: 256}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1681531427
@@ -8963,6 +8963,58 @@ PrefabInstance:
       propertyPath: _numberAnimator
       value: 
       objectReference: {fileID: 510063164}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: 1baa8cfddf6c41c4dba222e0b51a1c87, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: 99b51508a3f9bc7438b743d54c9f661f, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: 3f07ebb5968a2c846bc8c1032a7896b2, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: d86bee73cd37e504880ddf4f8d373b87, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: ad9011a6ab7ac4042afb66b5253eb1e7, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: 29118a9e039a9064eaf9d1c8ecf999e1, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: e90423c81f9fade48893b892b4c1a2d4, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: e5542bdd21613dc4aaddec564e94432b, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: a473196938421f84d9b57c30ca0be3d2, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[9]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: e96c3a312c739314897f8a55a05a526b, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[10]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: c79dcd49b164b0440967763a2e85c60b, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[11]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: c2504ae9f92dd574e934b93f107f4072, type: 3}
+    - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _carPrefabs.Array.data[12]
+      value: 
+      objectReference: {fileID: -4300201797180208337, guid: 57aefdf4d8d47444d9fba6c8bf45bd25, type: 3}
     - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _mphTMP
       value: 
@@ -9022,6 +9074,10 @@ PrefabInstance:
     - target: {fileID: 8981079521195661011, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: m_Name
       value: Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981079521195661011, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
