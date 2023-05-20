@@ -9099,6 +9099,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 470091343487314772, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 470091343487314772, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 470091343487314772, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.45
+      objectReference: {fileID: 0}
     - target: {fileID: 470091344740557604, guid: faf025d86035c9d409dc3ff1b3d4fbae, type: 3}
       propertyPath: m_Name
       value: 3x3_Board
