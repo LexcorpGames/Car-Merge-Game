@@ -15,6 +15,9 @@ public class CarDesciption : MonoBehaviour
 
     private Transform _poolNode;
 
+    public bool isMainOn;
+    public GameObject miniCar;
+
     public bool IsMiniature
     {
         get { return _isMiniature; }
@@ -28,11 +31,14 @@ public class CarDesciption : MonoBehaviour
 
     public void SetPoolParent(Transform poolNode)
     {
+        miniCar.SetActive(false);
+
         _poolNode = poolNode;
     }
 
     public void PoolBack()
     {
+        miniCar.SetActive(false);
         transform.SetParent(_poolNode);
     }
 }

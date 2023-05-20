@@ -140,6 +140,8 @@ MonoBehaviour:
   _isMiniature: 0
   _levelNumber: {fileID: 2038363209437537698}
   _numberText: {fileID: 665418296786826087}
+  isMainOn: 0
+  miniCar: {fileID: 3598756783905829148}
 --- !u!65 &7259816882947782929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -575,6 +577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5bc2dfdf8fd0934d8b26af9905dc3e9, type: 3}
+--- !u!1 &3598756783905829148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f5bc2dfdf8fd0934d8b26af9905dc3e9, type: 3}
+  m_PrefabInstance: {fileID: 4409081122788920397}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3814653745616565352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 702681067942869029, guid: f5bc2dfdf8fd0934d8b26af9905dc3e9, type: 3}
