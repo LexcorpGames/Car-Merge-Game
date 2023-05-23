@@ -9,6 +9,8 @@ public class IncomeGainUI : MonoBehaviour
     [SerializeField] private int _initialSize = 10;
     [SerializeField] private float _timeDuration = 1;
     [SerializeField] private float _upSpeed = 1;
+    [SerializeField] private Color startColor;
+    [SerializeField] private Color endColor;
 
     private List<GameObject> _pool = new List<GameObject>();
 
@@ -32,12 +34,14 @@ public class IncomeGainUI : MonoBehaviour
             {
                 obj.SetActive(true);
                 obj.transform.position = _prefab.transform.position;
+                obj.transform.SetAsLastSibling();
                 return obj;
             }
         }
 
         GameObject newObj = Instantiate(_prefab, transform);
         newObj.SetActive(true);
+        newObj.transform.SetAsLastSibling();
         _pool.Add(newObj);
         return newObj;
     }
@@ -51,23 +55,25 @@ public class IncomeGainUI : MonoBehaviour
     {
         var newItem = GetObject();
         TextMeshProUGUI tmp = newItem.GetComponent<TextMeshProUGUI>();
-        tmp.text = text;
-        StartCoroutine(Process(newItem, _timeDuration));
+        tmp.text = text+ "$";
+        StartCoroutine(Process(tmp, _timeDuration));
     }
 
-    private IEnumerator Process(GameObject obj, float time)
+    private IEnumerator Process(TextMeshProUGUI tmpObj, float time)
     {
         float timeUsed = 0f;
+        tmpObj.color = startColor;
         while (timeUsed < time)
         {
             // Move the object upwards by adding a small amount to its y position each frame
-            obj.transform.position += Vector3.up * Time.deltaTime * _upSpeed;
+            tmpObj.transform.position += Vector3.up * Time.deltaTime * _upSpeed;
+            tmpObj.color = Color.Lerp(startColor, endColor, timeUsed / time);
             timeUsed += Time.deltaTime;
             yield return null;
         }
 
         // do something to the object
         //yield return new WaitForSeconds(time);
-        ReturnObject(obj);
+        ReturnObject(tmpObj.gameObject);
     }
 }

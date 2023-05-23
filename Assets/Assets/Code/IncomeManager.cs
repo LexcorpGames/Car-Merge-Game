@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IncomeManager : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class IncomeManager : MonoBehaviour
     [SerializeField] private GameObject _buyButton_Free;
     [SerializeField] private GameObject _buyButton;
     [SerializeField] private GameObject _upgradeButton;
+    [SerializeField] private Button _buyCarButtonComponent;
+    [SerializeField] private Button _incomeUpgradeButtonComponent;
+    [SerializeField] private UIColorToggler _buyCarColorToggler;
+    [SerializeField] private UIColorToggler _incomeUpgradeColorToggler;
 
     [Header("Income")]
     [SerializeField] private float _gainInterval = 0.33f;
@@ -52,7 +57,6 @@ public class IncomeManager : MonoBehaviour
         _buyButton_Free.SetActive(true);
         _buyButton.SetActive(false);
         _upgradeButton.SetActive(false);
-
         LoadSavedData();
 
         _costText.text = _costPerBuy[_costButtonIndex].ToString();
@@ -127,6 +131,9 @@ public class IncomeManager : MonoBehaviour
                 CheckpointReached();
             }
         }
+
+        // UI Button State
+        UpdateButtonState();
     }
 
     private void OnUpdateTick()
@@ -154,6 +161,22 @@ public class IncomeManager : MonoBehaviour
 
         SaveData();
         //Debug.Log("REWARD: +" + _rewardPerCheckpoint.Reward + " Cash!");
+    }
+
+    private void UpdateButtonState()
+    {
+        if (_costButtonIndex != _costPerBuy.Length)
+        {
+            bool buyState = _currentMoney >= _costPerBuy[_costButtonIndex];
+            _buyCarButtonComponent.interactable = buyState;
+            _buyCarColorToggler.ToggleColor(buyState);
+        }
+        if (_upgradeButtonIndex != _costPerUpgrade.Length)
+        {
+            bool upgradeState = _currentMoney >= _costPerUpgrade[_upgradeButtonIndex];
+            _incomeUpgradeButtonComponent.interactable = upgradeState;
+            _incomeUpgradeColorToggler.ToggleColor(upgradeState);
+        }
     }
 
     private void UpdateButtonText()

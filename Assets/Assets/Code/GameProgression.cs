@@ -6,6 +6,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class GameProgression : MonoBehaviour
 {
     public float Current_MPH = 45f;
@@ -28,6 +29,10 @@ public class GameProgression : MonoBehaviour
     [Header("Config")]
     [SerializeField] private float[] _startSpeed;
 
+    [Header("Tutorial")]
+    [SerializeField] private bool _enableTutorial;
+    [SerializeField] private TutorialController tutorialController;
+
     private float _currentSpeed;
     private float _desiredSpeed;
     private float _desiredFOV;
@@ -39,6 +44,14 @@ public class GameProgression : MonoBehaviour
     private float _rivalOvertakeTime_Total;
     private int _nextRivalIndex;
     private int _currentRivalIndex;
+
+    private void Awake()
+    {
+        if(tutorialController == null)
+        {
+            tutorialController = FindObjectOfType<TutorialController>();
+        }
+    }
 
     private void Start()
     {
@@ -155,7 +168,21 @@ public class GameProgression : MonoBehaviour
 
     private void LoadSavedData()
     {
+        CheckTutorial();
         Current_Distance = PlayerPrefs.GetFloat("Current_Distance", 0f);
+    }
+
+    private void CheckTutorial()
+    {
+        if (!PlayerPrefs.HasKey("Current_Distance"))
+        {
+            bool startTutorial = (tutorialController != null) && (_enableTutorial);
+            tutorialController.gameObject.SetActive(startTutorial);
+            if (startTutorial)
+            {
+                tutorialController.StartTutorial(()=> _desiredSpeed != 0);
+            }
+        }
     }
 
     public void SaveData()
