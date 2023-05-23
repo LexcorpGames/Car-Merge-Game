@@ -29,6 +29,11 @@ public class CarDesciption : MonoBehaviour
         }
     }
 
+    public void ActivateRoadModel()
+    {
+        miniCar.gameObject.SetActive(true);
+    }
+
     public void SetPoolParent(Transform poolNode)
     {
         miniCar.SetActive(false);

@@ -47,6 +47,7 @@ public class GameProgression : MonoBehaviour
 
     private void Awake()
     {
+        _carLoaderPlayer.SubscribeToNewCarLoad(OnStartDrivingEvent);
         if(tutorialController == null)
         {
             tutorialController = FindObjectOfType<TutorialController>();
@@ -55,10 +56,7 @@ public class GameProgression : MonoBehaviour
 
     private void Start()
     {
-        _carLoaderPlayer.OnNewCarLoaded += OnStartDrivingEvent;
-
         _desiredFOV = _boostCamFOV.x;
-
         LoadSavedData();
     }
     
@@ -205,6 +203,11 @@ public class GameProgression_Editor : Editor
         if (myTarget == null) return;
 
         GUILayout.Space(20f);
+
+        if (GUILayout.Button("Clear Prefs", GUILayout.Height(35f)))
+        {
+            PlayerPrefs.DeleteAll();
+        }
 
         if (GUILayout.Button("Apply speed", GUILayout.Height(35f)))
         {

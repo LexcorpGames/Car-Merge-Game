@@ -41,6 +41,7 @@ public class CarLoader_Rival : MonoBehaviour
             newCarGO.transform.localEulerAngles = Vector3.zero;
             CarDesciption desc = newCarGO.GetComponent<CarDesciption>();
             desc.SetPoolParent(_poolNode);
+            //newCarGO.gameObject.SetActive(false);
         }
     }
 
@@ -68,6 +69,7 @@ public class CarLoader_Rival : MonoBehaviour
 
                 carGO.SetParent(_carPosition);
                 _loadedCar = desc;
+                desc.ActivateRoadModel();
                 return _loadedCar;
             }
         }

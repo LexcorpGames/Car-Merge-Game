@@ -50,6 +50,11 @@ public class CarLoader_Player : MonoBehaviour
         LoadSavedData();
     }
 
+    public void SubscribeToNewCarLoad(NewCarLoadedDelegate NewCarLoadedHandler)
+    {
+        OnNewCarLoaded += NewCarLoadedHandler;
+    }
+
     public void LoadCar(int carLevel)
     {
         //Remove prev car
@@ -69,11 +74,7 @@ public class CarLoader_Player : MonoBehaviour
 
                 carGO.SetParent(_carPosition);
                 LoadedCar = desc;
-
-                if (OnNewCarLoaded != null)
-                {
-                    OnNewCarLoaded();
-                }
+                OnNewCarLoaded?.Invoke();
                 break;
             }
         }
@@ -106,6 +107,11 @@ public class CarLoader_Player : MonoBehaviour
     public void SaveData()
     {
         PlayerPrefs.SetInt("LoadedCar.Level", LoadedCar.Level);
+    }
+
+    private void OnDestroy()
+    {
+        OnNewCarLoaded = null;
     }
 }
 
