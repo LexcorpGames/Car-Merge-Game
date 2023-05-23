@@ -1,0 +1,3 @@
+<linker>
+    <assembly fullname="MaxSdk.Scripts" preserve="all"/>
+</linker>
