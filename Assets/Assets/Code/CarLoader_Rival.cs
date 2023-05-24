@@ -22,7 +22,7 @@ public class CarLoader_Rival : MonoBehaviour
     [Header("Creatives")]
     [SerializeField] private float lastCarDistanceOffset = 160f;
     [SerializeField] private float firstCarDistanceOffset = 160f;
-    [SerializeField] private float carSpacing = 20f;
+    [SerializeField] private List<float> carSpacing;
 
 
     private CarDesciption _editorLoadedCar;
@@ -129,7 +129,7 @@ public class CarLoader_Rival : MonoBehaviour
                 _loadedCar.transform.position = Vector3.Lerp(_positionStart.position - lastCarDistanceOffset * dir, _positionEnd.position - firstCarDistanceOffset * dir, _overtakeProgress);
                 for (int i = 0; i < rivals.Count; i++)
                 {
-                    rivals[i].transform.position = _loadedCar.transform.position + carSpacing * (i+1)* dir;
+                    rivals[i].transform.position = _loadedCar.transform.position + carSpacing[i] * (i+1)* dir;
                 }
             }
             else

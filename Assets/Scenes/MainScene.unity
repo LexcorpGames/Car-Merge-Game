@@ -10022,12 +10022,124 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: lastCarDistanceOffset
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: firstCarDistanceOffset
-      value: 0
+      value: 320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[0]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[2]
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[3]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[4]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[5]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[6]
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[7]
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[8]
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[9]
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[0]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[2]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[4]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[5]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[6]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[7]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[8]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[9]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[10]
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[11]
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpeeds.Array.data[12]
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[10]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[11]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing.Array.data[12]
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8981079521195661011, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: m_Name
