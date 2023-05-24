@@ -19,10 +19,19 @@ public class CarLoader_Rival : MonoBehaviour
     private Transform _poolNode;
     [Header("Debug")]
     [SerializeField] private CarDesciption _loadedCar;
+    [Header("Creatives")]
+    [SerializeField] private float lastCarDistanceOffset = 160f;
+    [SerializeField] private float firstCarDistanceOffset = 160f;
+    [SerializeField] private float carSpacing = 20f;
+
+
     private CarDesciption _editorLoadedCar;
 
     public float OvertakeProgress { get => _overtakeProgress; set => _overtakeProgress = value; }
     public CarDesciption LoadedCar { get => _loadedCar; set => _loadedCar = value; }
+
+    bool allVisible = false;
+    private List<CarDesciption> rivals;
 
     private void Awake()
     {
@@ -77,6 +86,32 @@ public class CarLoader_Rival : MonoBehaviour
         return null;
     }
 
+    public CarDesciption LoadAllCars(int level)
+    {
+        if (!allVisible)
+        {
+            allVisible = true;
+            rivals = new List<CarDesciption>();
+            while(_poolNode.childCount != 0)
+            {
+                var carGO = _poolNode.GetChild(0);
+                CarDesciption desc = carGO.GetComponent<CarDesciption>();
+                desc.IsMiniature = false;
+                carGO.SetParent(_carPosition);
+                desc.ActivateRoadModel();
+                if (desc.Level == level)
+                {
+                    _loadedCar = desc;
+                }
+                else 
+                {
+                    rivals.Add(desc);
+                }
+            }
+        }
+        return _loadedCar;
+    }
+
     public void UpdateRivalPosition(float progress)
     {
         if (_loadedCar == null) return;
@@ -88,7 +123,19 @@ public class CarLoader_Rival : MonoBehaviour
     {
         if(_loadedCar != null)
         {
-            _loadedCar.transform.position = Vector3.Lerp(_positionStart.position, _positionEnd.position, _overtakeProgress);
+            if (allVisible)
+            {
+                var dir = -Vector3.forward;
+                _loadedCar.transform.position = Vector3.Lerp(_positionStart.position - lastCarDistanceOffset * dir, _positionEnd.position - firstCarDistanceOffset * dir, _overtakeProgress);
+                for (int i = 0; i < rivals.Count; i++)
+                {
+                    rivals[i].transform.position = _loadedCar.transform.position + carSpacing * (i+1)* dir;
+                }
+            }
+            else
+            {
+                _loadedCar.transform.position = Vector3.Lerp(_positionStart.position, _positionEnd.position, _overtakeProgress);
+            }
         }
     }
 }

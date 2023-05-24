@@ -9958,8 +9958,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1629756921}
     - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
-      propertyPath: _enableTutorial
+      propertyPath: spawnAllRivals
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _enableTutorial
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5602374491711469559, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _miniatureBoard
@@ -10011,6 +10015,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8124575761742551611, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: carSpacing
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: lastCarDistanceOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477132976842983597, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: firstCarDistanceOffset
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8981079521195661011, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}

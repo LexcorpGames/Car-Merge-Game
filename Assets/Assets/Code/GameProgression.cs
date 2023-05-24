@@ -12,6 +12,9 @@ public class GameProgression : MonoBehaviour
     public float Current_MPH = 45f;
     public float Current_Distance = 0f;
 
+    [Header("Creatives Options")]
+    [SerializeField] private bool spawnAllRivals = false;
+
     [Header("Setup")]
     [SerializeField] private LoopingWorld _loopingWorld;
     [SerializeField] private LeaderBoard _leaderBoard;
@@ -44,7 +47,7 @@ public class GameProgression : MonoBehaviour
     private float _rivalOvertakeTime_Total;
     private int _nextRivalIndex;
     private int _currentRivalIndex;
-
+    private bool _allSpawned = false;
     private void Awake()
     {
         _carLoaderPlayer.SubscribeToNewCarLoad(OnStartDrivingEvent);
@@ -143,7 +146,34 @@ public class GameProgression : MonoBehaviour
     private void OnStartDrivingEvent()
     {
         StartDriving(false);
-        InitiateNextRival();
+        Debug.Log("Loading");
+
+        if (!spawnAllRivals)
+        {
+            InitiateNextRival();
+        }
+        else if(!_allSpawned)
+        {
+            _allSpawned = true;
+            SpawnAllRivals();
+        }
+    }
+
+    private void SpawnAllRivals()
+    {
+        var nextRival = _leaderBoard.GetNextRivalInFront();
+        if (nextRival != null)
+        {
+            var rivalDesc = _carLoaderRival.LoadAllCars(nextRival.Level);
+            if (rivalDesc != null)
+            {
+                _rivalActive = true;
+                _rivalOvertakeTime_Current = 0f;
+
+                _currentRivalIndex = _nextRivalIndex;
+                _nextRivalIndex++;
+            }
+        }
     }
 
     private void InitiateNextRival()
