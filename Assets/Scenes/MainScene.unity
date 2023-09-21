@@ -9897,6 +9897,10 @@ PrefabInstance:
       propertyPath: _incomeUpgradeButtonComponent
       value: 
       objectReference: {fileID: 794246383}
+    - target: {fileID: 1632995618548645077, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4520772748159103749, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: _carPrefabs.Array.data[0]
       value: 
@@ -9969,6 +9973,18 @@ PrefabInstance:
       propertyPath: tutorialController
       value: 
       objectReference: {fileID: 387002760}
+    - target: {fileID: 5868142593414774544, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _tilePrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 1511460442914860903, guid: be2d9afa91648fd41acf4bd8511143b4, type: 3}
+    - target: {fileID: 5868142593414774544, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _tilePrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 1511460442914860903, guid: be2d9afa91648fd41acf4bd8511143b4, type: 3}
+    - target: {fileID: 5868142593414774544, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
+      propertyPath: _tilePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 1511460442914860903, guid: be2d9afa91648fd41acf4bd8511143b4, type: 3}
     - target: {fileID: 8124575761742551611, guid: c3d5e3171b52ac344b95f52d490a67a9, type: 3}
       propertyPath: m_RootOrder
       value: 3

@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 231368857907172545}
   m_Layer: 0
-  m_Name: Tile_SnowWoods
+  m_Name: Tile_Woods 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2449,7 +2449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3bc434b166786d4b878f0e994dc7228, type: 2}
+  - {fileID: 2100000, guid: 55b0ad1a500c0ed4da521ad52207ce7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
